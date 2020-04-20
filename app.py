@@ -9,6 +9,8 @@ from inference import Network
 CAR_COLORS = ["white", "gray", "yellow", "red", "green", "blue", "black"]
 CAR_TYPES = ["car", "bus", "truck", "van"]
 
+# Test verandering
+Test= 0
 
 def get_args():
     '''
@@ -86,9 +88,9 @@ def create_output_image(model_type, image, output):
         # Scale the output text by the image shape
         scaler = max(int(image.shape[0] / 1000), 1)
         # Write the text of color and type onto the image
-        image = cv2.putText(image, 
-            "Color: {}, Type: {}".format(color, car_type), 
-            (50 * scaler, 100 * scaler), cv2.FONT_HERSHEY_SIMPLEX, 
+        image = cv2.putText(image,
+            "Color: {}, Type: {}".format(color, car_type),
+            (50 * scaler, 100 * scaler), cv2.FONT_HERSHEY_SIMPLEX,
             2 * scaler, (255, 255, 255), 3 * scaler)
         return image
     else:
