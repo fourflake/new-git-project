@@ -10,7 +10,8 @@ CAR_COLORS = ["white", "gray", "yellow", "red", "green", "blue", "black"]
 CAR_TYPES = ["car", "bus", "truck", "van"]
 
 # Test verandering
-Test= 0
+Test= 4
+## variable update
 
 def get_args():
     '''
