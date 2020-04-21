@@ -28,5 +28,3 @@
 <footer>
     Made with ♥ @ Udacity
 </footer>
-
-Test laatste stap
